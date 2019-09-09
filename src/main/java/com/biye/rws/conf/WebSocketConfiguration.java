@@ -1,6 +1,6 @@
 package com.biye.rws.conf;
 
-import com.biye.rws.handler.EchoHandler;
+import com.biye.rws.controller.EchoWsController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
@@ -21,7 +21,7 @@ public class WebSocketConfiguration {
 
     @Bean
     public WebSocketHandler echoHandler(){
-        return new EchoHandler();
+        return new EchoWsController();
     }
 
     @Bean
